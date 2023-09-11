@@ -1,0 +1,136 @@
+[gd_scene load_steps=11 format=3 uid="uid://db3qnwjpd21y4"]
+
+[ext_resource type="Script" path="res://scripts/Board.gd" id="1_1aywx"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_i6q0s"]
+size = Vector2(200, 200)
+orientation = 2
+
+[sub_resource type="Gradient" id="Gradient_8y8bh"]
+colors = PackedColorArray(0, 0.780392, 1, 1, 0, 0.780392, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_ggvx1"]
+gradient = SubResource("Gradient_8y8bh")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_aej8v"]
+size = Vector2(4, 200)
+orientation = 2
+
+[sub_resource type="Gradient" id="Gradient_mlmco"]
+colors = PackedColorArray(0, 0.333333, 0.694118, 1, 0, 0.333333, 0.694118, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_uaq10"]
+gradient = SubResource("Gradient_mlmco")
+
+[sub_resource type="Gradient" id="Gradient_tiubv"]
+colors = PackedColorArray(0, 0.333333, 0.694118, 1, 0, 0.333333, 0.694118, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_ghthx"]
+gradient = SubResource("Gradient_tiubv")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_c5qtp"]
+size = Vector2(200, 4)
+orientation = 2
+
+[node name="Board" type="Node2D"]
+z_index = 10
+position = Vector2(320, 180)
+script = ExtResource("1_1aywx")
+metadata/_edit_group_ = true
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+mesh = SubResource("PlaneMesh_i6q0s")
+texture = SubResource("GradientTexture1D_ggvx1")
+
+[node name="Vertical Separators" type="Node2D" parent="."]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Vertical Separators"]
+z_index = 13
+position = Vector2(-98, 0)
+mesh = SubResource("PlaneMesh_aej8v")
+texture = SubResource("GradientTexture1D_uaq10")
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="Vertical Separators"]
+z_index = 13
+position = Vector2(-70, 0)
+mesh = SubResource("PlaneMesh_aej8v")
+texture = SubResource("GradientTexture1D_ghthx")
+
+[node name="MeshInstance2D3" type="MeshInstance2D" parent="Vertical Separators"]
+z_index = 13
+position = Vector2(-42, 0)
+mesh = SubResource("PlaneMesh_aej8v")
+texture = SubResource("GradientTexture1D_ghthx")
+
+[node name="MeshInstance2D4" type="MeshInstance2D" parent="Vertical Separators"]
+z_index = 13
+position = Vector2(-14, 0)
+mesh = SubResource("PlaneMesh_aej8v")
+texture = SubResource("GradientTexture1D_ghthx")
+
+[node name="MeshInstance2D5" type="MeshInstance2D" parent="Vertical Separators"]
+z_index = 13
+position = Vector2(14, 0)
+mesh = SubResource("PlaneMesh_aej8v")
+texture = SubResource("GradientTexture1D_ghthx")
+
+[node name="MeshInstance2D6" type="MeshInstance2D" parent="Vertical Separators"]
+z_index = 13
+position = Vector2(42, 0)
+mesh = SubResource("PlaneMesh_aej8v")
+texture = SubResource("GradientTexture1D_ghthx")
+
+[node name="MeshInstance2D7" type="MeshInstance2D" parent="Vertical Separators"]
+z_index = 13
+position = Vector2(70, 0)
+mesh = SubResource("PlaneMesh_aej8v")
+texture = SubResource("GradientTexture1D_ghthx")
+
+[node name="MeshInstance2D8" type="MeshInstance2D" parent="Vertical Separators"]
+z_index = 13
+position = Vector2(98, 0)
+mesh = SubResource("PlaneMesh_aej8v")
+texture = SubResource("GradientTexture1D_ghthx")
+
+[node name="Horizontal Separators" type="Node2D" parent="."]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Horizontal Separators"]
+z_index = 13
+position = Vector2(0, -98)
+mesh = SubResource("PlaneMesh_c5qtp")
+texture = SubResource("GradientTexture1D_uaq10")
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="Horizontal Separators"]
+z_index = 13
+position = Vector2(0, -65.333)
+mesh = SubResource("PlaneMesh_c5qtp")
+texture = SubResource("GradientTexture1D_uaq10")
+
+[node name="MeshInstance2D3" type="MeshInstance2D" parent="Horizontal Separators"]
+z_index = 13
+position = Vector2(0, -32.667)
+mesh = SubResource("PlaneMesh_c5qtp")
+texture = SubResource("GradientTexture1D_uaq10")
+
+[node name="MeshInstance2D4" type="MeshInstance2D" parent="Horizontal Separators"]
+z_index = 13
+mesh = SubResource("PlaneMesh_c5qtp")
+texture = SubResource("GradientTexture1D_uaq10")
+
+[node name="MeshInstance2D5" type="MeshInstance2D" parent="Horizontal Separators"]
+z_index = 13
+position = Vector2(0, 32.667)
+mesh = SubResource("PlaneMesh_c5qtp")
+texture = SubResource("GradientTexture1D_uaq10")
+
+[node name="MeshInstance2D6" type="MeshInstance2D" parent="Horizontal Separators"]
+z_index = 13
+position = Vector2(0, 65.334)
+mesh = SubResource("PlaneMesh_c5qtp")
+texture = SubResource("GradientTexture1D_uaq10")
+
+[node name="MeshInstance2D7" type="MeshInstance2D" parent="Horizontal Separators"]
+z_index = 13
+position = Vector2(0, 98)
+mesh = SubResource("PlaneMesh_c5qtp")
+texture = SubResource("GradientTexture1D_uaq10")
