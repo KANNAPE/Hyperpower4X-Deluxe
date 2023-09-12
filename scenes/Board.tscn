@@ -1,6 +1,6 @@
 [gd_scene load_steps=11 format=3 uid="uid://db3qnwjpd21y4"]
 
-[ext_resource type="Script" path="res://scripts/Board.gd" id="1_1aywx"]
+[ext_resource type="Script" path="res://scenes/board.gd" id="1_1aywx"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_i6q0s"]
 size = Vector2(200, 200)

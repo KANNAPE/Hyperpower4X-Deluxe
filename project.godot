@@ -11,13 +11,13 @@ config_version=5
 [application]
 
 config/name="Hypermega4X Deluxe"
-run/main_scene="res://scenes/Game.tscn"
+run/main_scene="res://scenes/game.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
-Gamemode="*res://scripts/Gamemode.gd"
+Gamemode="*res://globals/gamemode.gd"
 
 [display]
 
