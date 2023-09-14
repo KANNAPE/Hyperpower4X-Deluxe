@@ -1,14 +1,14 @@
 [gd_scene load_steps=5 format=3 uid="uid://ctv4mkif74dq1"]
 
-[ext_resource type="Texture2D" uid="uid://cm31oy6gvtrf6" path="res://assets/12.png" id="1_6n0cr"]
-[ext_resource type="Texture2D" uid="uid://dsr4pj4toxdfj" path="res://assets/9.png" id="2_bgdlm"]
-[ext_resource type="Script" path="res://scenes/pawn.gd" id="3_lh30x"]
+[ext_resource type="Texture2D" uid="uid://cm31oy6gvtrf6" path="res://assets/12.png" id="1_3aiac"]
+[ext_resource type="Texture2D" uid="uid://dsr4pj4toxdfj" path="res://assets/9.png" id="2_wehmm"]
+[ext_resource type="Script" path="res://scenes/token.gd" id="3_adsix"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_5qpbv"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_6n0cr")
+"texture": ExtResource("1_3aiac")
 }],
 "loop": true,
 "name": &"player_1",
@@ -16,15 +16,15 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_bgdlm")
+"texture": ExtResource("2_wehmm")
 }],
 "loop": true,
 "name": &"player_2",
 "speed": 5.0
 }]
 
-[node name="Pawn" type="AnimatedSprite2D"]
+[node name="Token" type="AnimatedSprite2D"]
 scale = Vector2(0.13, 0.13)
 sprite_frames = SubResource("SpriteFrames_5qpbv")
 animation = &"player_1"
-script = ExtResource("3_lh30x")
+script = ExtResource("3_adsix")
